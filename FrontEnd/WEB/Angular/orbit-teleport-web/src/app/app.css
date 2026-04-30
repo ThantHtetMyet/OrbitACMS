@@ -1,0 +1,76 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e6edf3;
+  background: radial-gradient(circle at top, #1f3047 0%, #0d1117 55%);
+}
+
+.landing-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.hero-card {
+  width: min(680px, 100%);
+  border: 1px solid #2b3a50;
+  background: rgba(16, 24, 36, 0.85);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8cb4ff;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 10px 0 12px;
+  font-size: clamp(30px, 6vw, 44px);
+}
+
+.subtitle {
+  margin: 0;
+  line-height: 1.6;
+  color: #b6c2cf;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.btn-primary {
+  background: #2f81f7;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #1f2a37;
+  color: #d8e4f2;
+  border: 1px solid #324154;
+}
