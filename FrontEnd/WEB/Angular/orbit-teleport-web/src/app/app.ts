@@ -16,7 +16,9 @@ export class App {
 
   protected readonly title = 'entral Teleport';
   protected readonly isSignInPage = computed(() =>
-    this.currentUrl().startsWith('/sign-in') || this.currentUrl().startsWith('/login')
+    this.currentUrl().startsWith('/sign-in') ||
+    this.currentUrl().startsWith('/login') ||
+    this.currentUrl().startsWith('/sign-up')
   );
 
   constructor() {
